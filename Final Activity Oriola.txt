@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>What I've Learned in Web Design</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+</script>
+<style>
+.body {
+	margin: 0;
+
+}
+
+.header {
+	background-color: #ff7f50;
+	padding: 20px;
+	text-align: center;
+}
+
+.column {
+  float: left;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+	<h1>What I've Learned in Web Design</h1>
+</div>
+
+<div class="row">
+	<div class="column side">
+	<h2>Java Script simple Math</h2>
+	<p id="demo"></p>
+	<script>
+	let x = 2;
+	let y = 5;
+	let z = x - y;
+	document.getElementById("demo").innerHTML = z;
+	</script>
+	<p>Just basic math using Java script, the give n numbers are 2 and 5 which is then subtracted giving us -3. 2-5 = 3</p>
+	</div>
+	
+<div class = "column middle">
+	<h2>What I have learned</h2>
+	<p>I learned alot in Web design more than I thought I would when I first came into class. I however feel
+	that I could have learned more if I attended the classes consistently as I was absent from most of them due to a
+	incident that left me unmotivated and sad for a while. While it is a shame that I wasn't abel to learn much my 
+	interest for web design is still here and I might continue to pursue and improve my skills on it. The basics of html were good to go through as 
+	I have forgotten or vaguely remember the html language, css was fun to learn and go through, it allowed me to design my websites more properly 
+	than before with only html. As Javascript and Webservers I was unfortunately not present during those times as such I don't know much about them.</p>
+	<p>I won't be surprised if I have to repeat this subject next term but maybe this time I hope no incident will harm
+	my ability to come to classes to relearn the principles and coding of html. Mostly I want to learn more about Javascript, web hoisting and basic principles of web design.
+	that is all that I can type as I am sick and want rest.</p>
+	</div>
+<div class = "column side">
+	<h2>Difficulty in finding a web server</h2>
+	<p>I tried to look for a proper and free web hosting site for this page but unfortunately 
+	I wasn't able to come across one, I was probably looking for it in the wrongplace so 
+	sadly this site won't be hosted.</p>
+	</div>
+</html>
